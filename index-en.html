@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/vendor/all.min.css" />
+    <link rel="stylesheet" href="./css/vendor/linear.css" />
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/vendor/aos.css" />
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <title>Alhilal Pharmacies</title>
+  </head>
+
+  <body class="overflow">
+
+    <div class="pre-loader">
+      <div class="content">
+        <div class="lds">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <div class="container">
+        <div class="nav-bottom">
+          <div class="nav-icons nav-icons-sm flex-center">
+            <div class="nava-btn nav-icon" id="nava-icon">
+              <div class="ico-btn">
+                <span class="lnr lnr-menu"></span>
+              </div>
+            </div>
+            <div class="search-btn nav-icon" id="search-btn">
+              <div class="ico-btn">
+                <span class="lnr lnr-magnifier"></span>
+              </div>
+              <span class="txt">Search...</span>
+            </div>
+          </div>
+          <div class="nav-logo">
+            <a href="#"><img src="./images/logo.png" alt=".." /></a>
+          </div>
+          <div class="nav-icons flex-center">
+            <div class="user nav-icon" id="user-btn">
+              <span class="ico-btn">
+                <span class="lnr lnr-user"></span>
+              </span>
+            </div>
+            <div class="favourite nav-icon">
+              <div class="ico-btn">
+                <span class="lnr lnr-heart"></span>
+              </div>
+            </div>
+            <div class="cart nav-icon">
+              <div class="ico-btn">
+                <span class="lnr lnr-cart"></span>
+              </div>
+            </div>
+            <div class="top-setting nav-lang nav-icon">
+              <span class="setting-anchor ico-btn">
+                <img src="./images/icons/en.png" alt=".." />
+                <span class="txt">English</span>
+                <span class="lnr lnr-chevron-down"></span>
+              </span>
+              <ul class="top-dropDown">
+                <li><a href="./index.html">العربية</a></li>
+                <li><a href="./index-en.html"> English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nava-container">
+        <div class="container">
+          <div class="nava" id="nava">
+            <div class="nava-content">
+              <div class="nava-head">
+                <div class="top-setting nav-lang nav-icon">
+                  <span class="setting-anchor ico-btn">
+                    <img src="./images/icons/en.png" alt=".." />
+                    <span class="txt">English</span>
+                    <span class="lnr lnr-chevron-down"></span>
+                  </span>
+                  <ul class="top-dropDown">
+                    <li><a href="./index.html">العربية</a></li>
+                    <li><a href="./index-en.html"> English</a></li>
+                  </ul>
+                </div>
+                <div class="nava-close" id="close-nava">
+                  <span class="lnr lnr-cross"></span>
+                </div>
+              </div>
+              <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> Specials</a></li>
+                <li><a href="#"> Pharmaceutical services</a></li>
+                <li class="top-setting sm-slide slide">
+                  <a class="setting-anchor drop">
+                    Meds<span class="lnr lnr-chevron-down down"></span>
+                  </a>
+                  <ul class="top-dropDown">
+                    <li><a href="#"> Painkillers </a></li>
+                    <li><a href="#"> Cold, cough and allergy medicines </a></li>
+                    <li><a href="#"> Stomach and colon medications </a></li>
+                    <li><a href="#"> Pediatric and neonatal medicines </a></li>
+                    <li><a href="#"> Oral and dental care </a></li>
+                    <li><a href="#"> Skin medications </a></li>
+                    <li><a href="#"> Prescription drugs </a></li>
+                  </ul>
+                </li>
+                <li><a href="#"> Cosmetics </a></li>
+                <li><a href="#"> Medical supplies </a></li>
+                <li><a href="#"> Hair care </a></li>
+                <li><a href="#"> New Arrivals </a></li>
+                <li><a href="#"> Contact us </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+      <div class="close-search" id="close-search">
+        <span class="lnr lnr-cross"></span>
+      </div>
+      <div class="search">
+        <div class="search-content">
+          <form action="#">
+            <div class="input-form">
+              <input type="text" placeholder="Search..." />
+              <button class="search-btn flex-center">
+                <span class="lnr lnr-magnifier"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="sign-form" id="sign-form">
+      <div class="container">
+        <div class="sign-content">
+          <div class="close-sign" id="close-sign">
+            <span class="lnr lnr-cross"></span>
+          </div>
+          <h3 class="head">Login</h3>
+          <form action="#">
+            <label for="email"> Email </label>
+            <input type="email" id="email" />
+            <label for="pass"> password </label>
+            <input type="password" id="password" />
+            <a href="#" class="forget"> Forgot your password? </a>
+            <div class="sign-btns">
+              <div><a href="#" class="in"> Sign in </a></div>
+              <div><a href="#" class="new"> Sign up </a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="swiper-container slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"
+              ><img src="./images/header/header.jpg" alt="slide1 banner"
+            /></a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </header>
+
+    <section class="categories">
+      <div class="container">
+        <div class="categories-head s-head" data-aos="fade-left">
+          <h3>Product Categories</h3>
+        </div>
+        <div class="categories-content" data-aos="zoom-in">
+          <div class="categories-swiper-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/1.jpg" alt=".." />
+                    </div>
+                    <h4>Pharmaceutical services</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/2.jpg" alt=".." />
+                    </div>
+                    <h4>Meds</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/3.jpg" alt=".." />
+                    </div>
+                    <h4>Cosmetics</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/4.jpg" alt=".." />
+                    </div>
+                    <h4>Medical supplies</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="category">
+                  <a href="#">
+                    <div class="category-img">
+                      <img src="./images/categories/5.jpg" alt=".." />
+                    </div>
+                    <h4>Hair care products</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-container banner2">
+      <div class="container">
+        <div class="banner-content flex-center">
+          <div class="banner">
+            <a href="#"><img src="./images/banners/1.jpg" alt=".." /></a>
+          </div>
+          <div class="banner">
+            <a href="#"><img src="./images/banners/2.jpg" alt=".." /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-slider">
+      <div class="container">
+        <div class="product-head s-head" data-aos="fade-left">
+          <h3>Special Offers</h3>
+        </div>
+        <div class="product-body" data-aos="zoom-in">
+          <div class="product-swiper-container s-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/1.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/2.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/3.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/4.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="more-btn">
+          <a href="#" class="more">Shop More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-container">
+      <div class="banner-content flex-center">
+        <div class="banner">
+          <a href="#"><img src="./images/banners/3.jpg" alt=".." /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-slider">
+      <div class="container">
+        <div class="product-head s-head" data-aos="fade-left">
+          <h3>New Arrivals</h3>
+        </div>
+        <div class="product-body" data-aos="zoom-in">
+          <div class="product-swiper-container s-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/1.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/2.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/3.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./images/products/4.jpg" alt=".." />
+                      <div class="note start">Discount 15%</div>
+                    </a>
+                  </div>
+                  <div class="product-disc">
+                    <h5><a href="#">Product Name</a></h5>
+                    <div class="price flex-center">
+                      <div class="now"><span>1500</span> <span>S.R</span></div>
+                      <div class="price-sale">
+                        <span>1800</span><span>S.R</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="more-btn">
+          <a href="#" class="more">Shop More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-container banner2">
+      <div class="container">
+        <div class="banner-content flex-center">
+          <div class="banner">
+            <a href="#"><img src="./images/banners/1.jpg" alt=".." /></a>
+          </div>
+          <div class="banner">
+            <a href="#"><img src="./images/banners/2.jpg" alt=".." /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="container">
+        <div class="brands-head s-head" data-aos="fade-left">
+          <h3>Shop by brand</h3>
+        </div>
+        <div class="brands-content" data-aos="zoom-in">
+          <div class="brands-swiper-container s-containe">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="brand">
+                  <a href="#">
+                    <div class="brand-img">
+                      <img src="./images/brands/1.jpg" alt=".." />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand">
+                  <a href="#">
+                    <div class="brand-img">
+                      <img src="./images/brands/2.jpg" alt=".." />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand">
+                  <a href="#">
+                    <div class="brand-img">
+                      <img src="./images/brands/3.jpg" alt=".." />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand">
+                  <a href="#">
+                    <div class="brand-img">
+                      <img src="./images/brands/4.jpg" alt=".." />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand">
+                  <a href="#">
+                    <div class="brand-img">
+                      <img src="./images/brands/5.jpg" alt=".." />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="brand">
+                  <a href="#">
+                    <div class="brand-img">
+                      <img src="./images/brands/6.jpg" alt=".." />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="more-btn">
+          <a href="#" class="more">Show More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo" data-aos="fade-left" data-aos-delay="0">
+            <img src="./images/footer-logo.png" alt=".." />
+            <p>
+              There is a proven fact from a long time ago that the readable
+              content of a page will not distract the reader from focusing on
+              the external appearance of the text or the form of the paragraphs
+              on the page that he reads
+            </p>
+          </div>
+          <div
+            class="info footer-list"
+            data-aos="fade-left"
+            data-aos-delay="0"
+            data-target="#collapse1"
+            aria-expanded="false"
+            aria-controls="collapse1"
+          >
+            <div class="head">
+              <h4>Information <span class="lnr lnr-chevron-down"> </span></h4>
+            </div>
+            <ul id="collapse1">
+              <li><a href="#"> Who we are </a></li>
+              <li><a href="#"> Shipping and Delivery </a></li>
+              <li><a href="#"> Bank accounts </a></li>
+              <li><a href="#"> Terms of Use </a></li>
+            </ul>
+          </div>
+          <div
+            class="adds footer-list"
+            data-aos="fade-left"
+            data-aos-delay="300"
+            data-target="#collapse2"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            <div class="head">
+              <h4>Extensions <span class="lnr lnr-chevron-down"> </span></h4>
+            </div>
+            <ul id="collapse2">
+              <li><a href="#"> companies </a></li>
+              <li><a href="#"> Gift vouchers </a></li>
+              <li><a href="#"> commission system </a></li>
+              <li><a href="#"> Featured Shows </a></li>
+            </ul>
+          </div>
+          <div
+            class="cust footer-list"
+            data-aos="fade-left"
+            data-aos-delay="600"
+            data-target="#collapse3"
+            aria-expanded="false"
+            aria-controls="collapse3"
+          >
+            <div class="head">
+              <h4>
+                Customer Service <span class="lnr lnr-chevron-down"> </span>
+              </h4>
+            </div>
+            <ul id="collapse3">
+              <li><a href="#"> Contact us </a></li>
+              <li><a href="#"> Return request </a></li>
+              <li><a href="#"> Site map </a></li>
+            </ul>
+          </div>
+          <div
+            class="account footer-list"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-target="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapse4"
+          >
+            <div class="head">
+              <h4>My Account <span class="lnr lnr-chevron-down"> </span></h4>
+            </div>
+            <ul id="collapse4">
+              <li><a href="#"> My account </a></li>
+              <li><a href="#"> My requests </a></li>
+              <li><a href="#"> my wish list </a></li>
+              <li><a href="#"> mailing list </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="mail" data-aos="fade-left" data-aos-delay="0">
+            <div class="head">
+              <h4>Subscribe to the Newsletter</h4>
+            </div>
+            <form action="#">
+              <div class="input-form">
+                <input type="text" placeholder="Enter your Email" />
+                <button class="search-btn flex-center">
+                  <span class="lnr lnr-arrow-right"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="social" data-aos="zoom-in" data-aos-delay="0">
+            <div class="head">
+              <h4>Follow us</h4>
+            </div>
+            <div class="social-content flex-center">
+              <div class="social-icon snap">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-snapchat-ghost"></i>
+                </a>
+              </div>
+              <div class="social-icon insta">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="social-icon twitter">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="social-icon facebook">
+                <a class="flex-center" href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="payment" data-aos="fade-right" data-aos-offset="0">
+            <div class="head">
+              <h4>Shipping and payment methods</h4>
+            </div>
+            <img src="./images/icons/pay.png" alt=".." />
+          </div>
+        </div>
+        <div class="credit">
+          <p>All rights reserved, Al Hilal Pharmacies 2020 &copy;</p>
+          <p>
+            Made with <i class="fas fa-heart"></i> in
+            <a href="https://tasawk.com.sa/" target="_blank"
+              ><img src="./images/icons/footer-en.png" alt=".."
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="up"
+      class="up flex-center"
+      onclick="window.scroll({top: 0,behavior: 'smooth'});"
+    >
+      <span class="lnr lnr-arrow-up"></span>
+    </div>
+
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/vendor/aos.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
