@@ -664,37 +664,17 @@ nav .nav-bottom .nav-icons .nav-lang {
   margin-inline-start: 20px;
 }
 
-nav .nav-bottom .nav-icons .nava-btn {
-  display: none;
-}
-
+nav .nav-bottom .nav-icons .nava-btn,
 nav .nav-bottom .nav-icons .search-btn {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-}
-
-nav .nav-bottom .nav-icons .search-btn .txt {
-  font-size: 18px;
-  color: #c3c3c3;
-  margin-inline-start: 5px;
-  font-weight: 300;
-}
-
-nav .nav-bottom .nav-icons .search-btn .ico-btn {
-  transition: all 0.5s;
-}
-
-nav .nav-bottom .nav-icons .search-btn:hover .ico-btn {
-  transform: rotate(360deg);
+  display: none;
 }
 
 @media (max-width: 1200px) {
   nav .nav-bottom .nav-icons {
     justify-content: flex-end;
   }
-  nav .nav-bottom .nav-icons .nava-btn {
+  nav .nav-bottom .nav-icons .nava-btn,
+  nav .nav-bottom .nav-icons .search-btn {
     display: block;
   }
   nav .nav-bottom .nav-icons .nav-lang,
@@ -711,11 +691,84 @@ nav .nav-bottom .nav-icons .search-btn:hover .ico-btn {
 
 nav .nav-bottom .nav-icons-sm {
   justify-content: flex-start;
+  display: none;
 }
 
 nav .nav-bottom .nav-icons-sm .nav-icon {
   margin-inline-start: 0;
   margin-inline-end: 20px;
+}
+
+@media (max-width: 1200px) {
+  nav .nav-bottom .nav-icons-sm {
+    display: flex;
+  }
+}
+
+nav .nav-bottom .search {
+  max-width: 90%;
+}
+
+nav .nav-bottom .search .search-content {
+  position: relative;
+}
+
+nav .nav-bottom .search .search-content form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 50px;
+}
+
+nav .nav-bottom .search .search-content .input-form {
+  max-width: 100%;
+  position: relative;
+}
+
+nav .nav-bottom .search .search-content input {
+  width: 200px;
+  max-width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 0;
+  padding-inline-start: 50px;
+  outline: none;
+  transition: all 0.5s;
+  border: none;
+  font-size: 18px;
+  color: #c3c3c3;
+  font-weight: 300;
+}
+
+nav .nav-bottom .search .search-content input::placeholder {
+  color: #c3c3c3;
+}
+
+nav .nav-bottom .search .search-content .search-btn {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  color: #212121;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  line-height: 0;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+nav .nav-bottom .search .search-content .search-btn:hover {
+  color: #4651a3;
+}
+
+@media (max-width: 1200px) {
+  nav .nav-bottom .search {
+    display: none;
+  }
 }
 
 nav .nav-lang .setting-anchor .txt {
@@ -768,7 +821,7 @@ nav .nava .nava-content > ul {
 }
 
 nav .nava .nava-content > ul > li {
-  margin: 0 7px;
+  margin: 0 15px;
 }
 
 nav .nava .nava-content > ul > li > a,
@@ -1419,7 +1472,7 @@ header aside .search:hover {
 }
 
 .categories .category-img img {
-  border: 2px solid #f2f2f2;
+  border: 3px solid #f2f2f2;
   border-radius: 100%;
   max-width: 100%;
   transition: all 0.5s;
@@ -1796,6 +1849,11 @@ html[dir="ltr"] .s-containe .swiper-button-next {
 html[dir="ltr"] nav .nava-active .nava-content {
   right: unset;
   left: 0;
+}
+
+html[dir="ltr"] nav .nav-bottom .search .search-content .search-btn {
+  right: unset;
+  left: 15px;
 }
 
 html[dir="ltr"] .product-slider .more-btn .more:before,

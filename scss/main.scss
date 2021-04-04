@@ -492,37 +492,16 @@ nav {
                 margin-inline-start: 20px;
             }
 
-            .nava-btn {
-                display: none;
-            }
-
+            .nava-btn,
             .search-btn {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                cursor: pointer;
-                .txt {
-                    font-size: 18px;
-                    color: rgba(195, 195, 195, 255);
-                    margin-inline-start: 5px;
-                    font-weight: 300;
-                }
-
-                .ico-btn {
-                    transition: all 0.5s;
-                }
-
-                &:hover {
-                    .ico-btn {
-                        transform: rotate(360deg);
-                    }
-                }
+                display: none;
             }
 
             @media (max-width: 1200px) {
                 justify-content: flex-end;
 
-                .nava-btn {
+                .nava-btn,
+                .search-btn {
                     display: block;
                 }
 
@@ -545,10 +524,78 @@ nav {
 
         .nav-icons-sm {
             justify-content: flex-start;
+            display: none;
 
             .nav-icon {
                 margin-inline-start: 0;
                 margin-inline-end: 20px;
+            }
+
+            @media(max-width:1200px){
+                display:flex;
+            }
+        }
+
+        .search {
+            max-width: 90%;
+            .search-content {
+                position: relative;
+    
+                form {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    border-radius: 50px;
+                }
+    
+                .input-form {
+                    max-width: 100%;
+                    position: relative;
+                }
+    
+                input {
+                    width: 200px;
+                    max-width: 100%;
+                    height: 40px;
+                    background-color: transparent;
+                    border-radius: 0;
+                    padding-inline-start: 50px;
+                    outline: none;
+                    transition: all 0.5s;
+                    border: none;
+                    font-size: 18px;
+                    color: rgba(195, 195, 195, 255);
+                    font-weight: 300;
+
+                    &::placeholder{
+                        color: rgba(195, 195, 195, 255);
+                    }
+                }
+    
+                .search-btn {
+                    font-size: 24px;
+                    position: absolute;
+                    top: 50%;
+                    right: 15px;
+                    transform: translateY(-50%);
+                    transition: all 0.5s;
+                    color: rgba(33, 33, 33, 255);
+                    cursor: pointer;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    line-height: 0;
+                    font-weight: 400;
+                    background-color: transparent;
+    
+                    &:hover {
+                        color: $color1;
+                    }
+                }
+            }
+
+            @media(max-width:1200px){
+                display: none;
             }
         }
     }
@@ -600,7 +647,7 @@ nav {
                 padding: 0;
 
                 & > li {
-                    margin: 0 7px;
+                    margin: 0 15px;
 
                     & > a,
                     & > .setting-anchor {
@@ -1264,7 +1311,7 @@ header {
         overflow: hidden;
 
         img {
-            border: 2px solid rgb(242, 242, 242);
+            border: 3px solid #f2f2f2;
             border-radius: 100%;
             max-width: 100%;
             transition: all 0.5s;
@@ -1658,6 +1705,11 @@ html[dir="ltr"] {
                 left: 0;
             }
         }
+    }
+
+    nav .nav-bottom .search .search-content .search-btn{
+        right: unset;
+        left: 15px;
     }
 
     .product-slider .more-btn .more:before,
