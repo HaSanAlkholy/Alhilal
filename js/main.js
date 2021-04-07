@@ -63,6 +63,7 @@ $(window).on("load", function () {
     });
   
     $('#sign-form').click(function (e) {
+      console.log(e.target);
       if (e.target.id == 'sign-form' || e.target.id == 'close-sign' || e.target.parentNode.id == "close-sign") {
         $(this).removeClass('sign-form-active');
         $('html').removeClass('overflow');
@@ -269,6 +270,11 @@ $(window).on("load", function () {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 
